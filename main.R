@@ -6,7 +6,7 @@ app <- DockerApplication$new('/data/')
 app$readConfig()
 
 
-install.packages("rvest",repos = "http://cran.us.r-project.org")
+install.packages("rvest")
 
 library("rvest")
 
