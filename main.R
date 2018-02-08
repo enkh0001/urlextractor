@@ -2,18 +2,19 @@
 title: "imageURL"
 output: html_document
 ---
+library('keboola.r.docker.application')
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# intialize application
+app <- DockerApplication$new('/data/')
+app$readConfig()
 
-## R Markdown
 ```{r}
 install.packages("rvest",repos = "http://cran.us.r-project.org")
 ```
 ```{r}
 library("rvest")
 ```
+
 ```{r}
 gg<-read_html("https://www.gadogado.cz/cs/produkty/?id_category=22&n=74")
 ```
