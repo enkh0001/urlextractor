@@ -1,14 +1,6 @@
+install.packages('rvest')
 
-library('keboola.r.docker.application')
-
-# intialize application
-app <- DockerApplication$new('/data/')
-app$readConfig()
-
-
-install.packages("rvest")
-
-library("rvest")
+library(rvest)
 
 gg<-read_html("https://www.gadogado.cz/cs/produkty/?id_category=22&n=74")
 
