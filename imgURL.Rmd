@@ -27,5 +27,5 @@ product_id<-gg%>%html_nodes("a.Xquick-view") %>%html_attr("data-id-product")
 gg<-data.frame(product_id,img)
 ```
 ```{r}
-write.csv(gg, file = "/gg/out/tables/result.csv", row.names = FALSE)
+write.csv(gg, file = "out/tables/gg.csv", row.names = FALSE)
 ```
