@@ -15,7 +15,7 @@ install.packages("rvest",repos = "http://cran.us.r-project.org")
 library("rvest")
 ```
 ```{r}
-gg<-read_html("https://www.gadogado.cz/cs/produkty/?id_category=22&n=74")
+gg<-read_html("https://www.gadogado.cz/cs/produkty/?id_category=22&n=71")
 ```
 ```{r}
 img<-gg%>%html_nodes("img.img-responsive.img1") %>%html_attr("src")
